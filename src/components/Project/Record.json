@@ -1,0 +1,25 @@
+[
+
+    {
+        "image":"src/assets/Image/fing.png",
+        "para":"Fing is a photo search website where we can find search different kinds of photo with the help of this website. It almost can find exact search of the word we typed. ",
+        "name":"Fing",
+        "tools":"React, Javascript, TailwindCss, Html, Hooks, React_Icons, Props, Api." ,
+        "code": "https://github.com/EntireHall/Fing.git",
+        "demo": "https://fing-lgxm.onrender.com/"
+
+    },
+
+    {
+        "image":"src/assets/Image/fing.png",
+        "para":"Seeit is a weather website where we can search current weather report of any searched city. there is also a quick search function of 5 cities for quick access the report. although there are more features in it. ",
+        "name":"Seeit",
+        "tools":"React, Javascript, TailwindCss, Html, Hooks, React_Icons, Props, Api.",
+        "code": "https://github.com/EntireHall/Weather-Site-unstable.git",
+        "demo": "https://seeit-tt2k.onrender.com/"
+
+
+    }
+
+]
+
