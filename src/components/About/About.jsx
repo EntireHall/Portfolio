@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import avatar3 from "../../assets/Image/avatar3.png"
+import Skill from "../Skill/Skill"
 
 function Bolt({item,det})
 {
@@ -12,7 +13,7 @@ function Bolt({item,det})
 
 export default function About() {
   return (
-
+<>
         <div className='min-h-screen flex justify-center items-center bg-zinc-950 pl-[15%] max-sm:px-4'>
 
         <div className='w-[30%]  max-sm:hidden'>
@@ -46,6 +47,8 @@ export default function About() {
       </div>
           </div>
           </div>
-      
+
+<Skill/>
+ </>     
   )
 }

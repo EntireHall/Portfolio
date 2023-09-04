@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from './Form/Form';
 import { FaPhone} from "react-icons/fa6";
-
+import Project from "../Project/Project"
 
 export default function Contact() {
 
@@ -15,6 +15,7 @@ export default function Contact() {
   }
 
   return (
+    <>
     <div className='bg-zinc-950 flex-wrap min-h-screen flex-col px-4'>
       <div className='text-white font-pop'>
     <div className='flex  flex-col items-center pt-20'>
@@ -31,7 +32,7 @@ export default function Contact() {
     
     </div>
  
-   
-    
+  <Project/> 
+ </>   
   )
 }

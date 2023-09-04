@@ -1,10 +1,11 @@
 import React from 'react'
 import {SiJavascript,SiHtml5,SiCss3,SiReact,SiTailwindcss,SiMysql,SiPhp} from 'react-icons/si'
 import Skillbar from './Skillbar'
+import Contact from "../Contact/Contact"
 
 export default function Service() {
   return (
-   
+   <>
     <div  className='min-h-screen bg-zinc-950 py-10 flex justify-start flex-wrap flex-col '>
 <h1 className=' font-pop text-center text-green-700 font-bold text-5xl mb-20 mt-10 transition-colors delay-100 duration-100 hover: stroke-red-700'>My Skill Sets</h1>
 
@@ -49,6 +50,8 @@ export default function Service() {
 <div className='mt-10 '><Skillbar/></div>
 </div>
    
-  
+
+<Contact/>
+</>  
   )
 }

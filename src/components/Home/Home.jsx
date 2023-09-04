@@ -4,7 +4,7 @@ import { BsDownload, BsFolder2Open } from 'react-icons/bs'
 import { Type } from './Type'
 import Kartik from "../../assets/Image/Kartik.pdf"
 import avatar2 from "../../assets/Image/avatar2.png"
-
+import About from "../About/About"
 
 function Button({ icon, title,title1 }) {
   return <div className="flex gap-2 items-center rounded border text-green-800 px-4 py-2 border-green-600 hover:bg-green-800 hover:border-none hover:text-black font-bold">
@@ -24,6 +24,7 @@ function Button1({ icon, title,title1 }) {
 
 export default function Home() {
   return (
+    <>
     <div className='flex bg-zinc-950  min-h-screen justify-center items-center md:px-28 '>
    
       <div className=' flex flex-col items-left md:pl-20 md:w-[70%] max-sm:pl-10'>
@@ -57,9 +58,11 @@ export default function Home() {
         <div className='flex w-[30%]  max-sm:hidden'>
                        <img src={avatar2} className='h-[500px] w-[350px]' />
           </div> 
+       
         </div>
    
-
+        <About/>
+</>
   )
 
 
