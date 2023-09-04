@@ -1,6 +1,13 @@
 import React from 'react'
 import Record from './Record.json'
+import fing from "../../assets/Image/fing.png"
+
+
+
+
 function Rand({hell,div})
+
+
 {
   return<div className='text-slate-300 pl-10 text-2xl font-pop text-center mb-2.5 '>
 
@@ -22,9 +29,6 @@ export default function Service() {
 
 <div className='flex p-2 sm:max-w-[60%] border-4 border-green-800 pr-7 transition ease-in duration-300 delay-200 hover:bg-gradient-to-r from-zinc-950 to-zinc-800 via-zinc-950' key={index} >
         
-        
-          <img src={data.image} className='w-[340px] h-[399px] max-sm:hidden mt-10'/>
-         
          <div>
           <Rand hell="Project Name :" div={data.name}/>
           <Rand hell="Tools Used :" div={data.tools}/>
