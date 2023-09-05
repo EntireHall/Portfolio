@@ -2466,6 +2466,10 @@ video {
   padding-left: 2.75rem;
 }
 
+.pl-12{
+  padding-left: 3rem;
+}
+
 .pl-16{
   padding-left: 4rem;
 }
@@ -2534,6 +2538,10 @@ video {
   padding-left: 20%;
 }
 
+.pr-1{
+  padding-right: 0.25rem;
+}
+
 .pr-10{
   padding-right: 2.5rem;
 }
@@ -2556,6 +2564,10 @@ video {
 
 .pr-28{
   padding-right: 7rem;
+}
+
+.pr-3{
+  padding-right: 0.75rem;
 }
 
 .pr-36{
@@ -2608,18 +2620,6 @@ video {
 
 .pt-40{
   padding-top: 10rem;
-}
-
-.pl-12{
-  padding-left: 3rem;
-}
-
-.pr-3{
-  padding-right: 0.75rem;
-}
-
-.pr-1{
-  padding-right: 0.25rem;
 }
 
 .text-left{
@@ -3190,10 +3190,6 @@ video {
   background-color: transparent;
 }
 
-.hover\:bg-gradient-to-r:hover{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .hover\:text-xl:hover{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -3262,10 +3258,6 @@ video {
     border-style: none;
   }
 
-  .max-sm\:p-10{
-    padding: 2.5rem;
-  }
-
   .max-sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -3285,6 +3277,14 @@ video {
 
   .max-sm\:pt-10{
     padding-top: 2.5rem;
+  }
+
+  .max-sm\:pl-20{
+    padding-left: 5rem;
+  }
+
+  .max-sm\:pl-10{
+    padding-left: 2.5rem;
   }
 
   .max-sm\:text-2xl{
@@ -3316,10 +3316,6 @@ video {
 
   .md\:mt-20{
     margin-top: 5rem;
-  }
-
-  .md\:mt-28{
-    margin-top: 7rem;
   }
 
   .md\:mt-40{
@@ -3371,23 +3367,9 @@ video {
     padding: 1.5rem;
   }
 
-  .md\:p-1{
-    padding: 0.25rem;
-  }
-
   .md\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
-  }
-
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   .md\:pl-20{
@@ -3404,6 +3386,14 @@ video {
 
   .md\:pr-\[30\%\]{
     padding-right: 30%;
+  }
+
+  .md\:pl-\[20\%\]{
+    padding-left: 20%;
+  }
+
+  .md\:pl-40{
+    padding-left: 10rem;
   }
 
   .md\:text-6xl{
