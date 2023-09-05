@@ -17,7 +17,7 @@ const Form = () => {
 
 
     function Input({ type, placeholder, name,typ}) {
-        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 pr-40 outline-none' />
+        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 pr-40 outline-none ' />
         
     }
     
@@ -30,12 +30,12 @@ const Form = () => {
 
         <form onSubmit={handleSubmit} autoComplete='off' className=' border-2 md:border-green-700 max-sm:border-none  flex flex-col flex-wrap md:p-10  mt-10 text-slate-200 mix-blend-screen' >
             <div className='flex  flex-wrap justify-center'>
-                <div className='grid'>
+                <div className='grid '>
                     <Input type="text" name="name"  onChange={handleChange} value={data.name} placeholder='Your Name' />
                     <Input type="phone" name="phone" onChange={handleChange} value={data.phone} placeholder='Your Phone' />
                     <Input type="email" name="email" onChange={handleChange} value={data.email} placeholder='Your Email' />
                 </div>
-                <div className='pl-4'>
+                <div className='flex flex-wrap pl-4'>
                     <Input1 type="text" name="message" onChange={handleChange} value={data.message} placeholder='Your Message'/>
                 </div>
             </div>
