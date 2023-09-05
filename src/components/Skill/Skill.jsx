@@ -6,8 +6,8 @@ import Contact from "../Contact/Contact"
 export default function Service() {
   return (
    <>
-    <div  className='min-h-screen bg-zinc-950 py-10 flex justify-start flex-wrap flex-col '>
-<h1 className=' font-pop text-center text-green-700 font-bold text-5xl mb-20 mt-10 transition-colors delay-100 duration-100 hover: stroke-red-700'>My Skill Sets</h1>
+    <div  className='min-h-screen bg-zinc-950 py-6   flex justify-start flex-wrap flex-col '>
+<h1 className=' font-pop text-center text-green-700 font-bold text-5xl mb-20 md:mt-20 transition-colors delay-100 duration-100 hover: stroke-red-700 mix-blend-screen'>My Skill Sets</h1>
 
 <div className='flex gap-4 justify-center  flex-wrap '>
 
@@ -47,7 +47,7 @@ export default function Service() {
           </div>
          
 </div>
-<div className='mt-10 '><Skillbar/></div>
+<div className='md:mt-10 mix-blend-screen pb-10 '><Skillbar/></div>
 </div>
    
 

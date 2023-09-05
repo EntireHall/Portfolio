@@ -1,18 +1,14 @@
 import React from 'react'
 import Record from './Record.json'
-import fing from "../../assets/Image/fing.png"
 
-
-
-
-function Rand({hell,div})
+function Rand({hell,div1})
 
 
 {
-  return<div className='text-slate-300 pl-10 text-2xl font-pop text-center mb-2.5 '>
+  return<div className='text-slate-300 text-2xl font-pop flex flex-col justify-center items-center text-justify mb-2.5 '>
 
       <h1 className='font-bold text-green-700 '>{hell}</h1>
-      <span className=' text-lg'>{div}</span>
+      <span className='text-lg'>{div1}</span>
 
   </div>
 }
@@ -21,20 +17,21 @@ export default function Service() {
 
   return (
     
-     <div className='min-h-screen bg-zinc-950  flex justify-center items-center flex-wrap flex-col gap-4  '  >
+     <div className='flex flex-col justify-center items-center flex-wrap gap-10 min-h-screen bg-zinc-950 mix-blend-screen'>
 
-<h1 className='text-6xl font-pop font-extrabold text-slate-200 p-4 mb-10 mt-28 '>Projects Made  </h1>
+<h1 className='md:text-6xl font-pop font-extrabold text-slate-200  mb-10 md:mt-40 max-sm:text-4xl max-sm:mt-16'>Projects Made  </h1>
     {
       Record.map((data,index) => (
 
-<div className='flex p-2 sm:max-w-[60%] border-4 border-green-800 pr-7 transition ease-in duration-300 delay-200 hover:bg-gradient-to-r from-zinc-950 to-zinc-800 via-zinc-950' key={index} >
+<div className='border-4 border-green-700 md:max-w-[60%] max-sm:border-none flex-wrap md:p-6
+transition ease-in duration-300 delay-200 hover:bg-gradient-to-r from-zinc-950 to-zinc-800 via-zinc-950' key={index} >
         
-         <div>
-          <Rand hell="Project Name :" div={data.name}/>
-          <Rand hell="Tools Used :" div={data.tools}/>
-          <Rand hell="About :" div={data.para}/>
-          <Rand hell="Source Code :" div={data.code}/>
-          <Rand hell="Live demo:" div={data.demo}/>
+         <div className='pr-3 pl-3'>
+          <Rand hell="Project Name :" div1={data.name}/>
+          <Rand hell="Tools Used :" div1={data.tools}/>
+          <Rand hell="About :" div1={data.para}/>
+          <Rand hell="Source Code :" div1={data.code}/>
+          <Rand hell="Live demo:" div1={data.demo}/>
          </div>
 
       </div>

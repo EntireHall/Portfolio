@@ -1,6 +1,5 @@
 import React from 'react'
 import Form from './Form/Form';
-import { FaPhone} from "react-icons/fa6";
 import Project from "../Project/Project"
 
 export default function Contact() {
@@ -16,10 +15,10 @@ export default function Contact() {
 
   return (
     <>
-    <div className='bg-zinc-950 flex-wrap min-h-screen flex-col px-4'>
+    <div className='bg-zinc-950 flex-wrap min-h-screen flex-col px-4 mix-blend-screen '>
       <div className='text-white font-pop'>
-    <div className='flex  flex-col items-center pt-20'>
-    <div className='text-5xl text-green-700 font-pop font-extrabold mb-10'>GET IN TOUCH</div>
+    <div className='flex  flex-col items-center '>
+    <div className='text-5xl text-green-700 font-pop font-extrabold mb-10 md:mt-20 max-sm:mt-6 '>GET IN TOUCH</div>
     <Red col="Phone:" dun="+91-7710448775"/>
     <Red col="Email:" dun="KK23223511@gmail.com"/>
     <Red col="Address:" dun="#20, Vikasnagar, Maulijagran, Chandigarh, 160102"/>

@@ -3,7 +3,7 @@ import React from 'react'
 function Skillbar() {
 
   return (
-  <div className='flex max-sm:flex-col '>
+  <div className='flex max-sm:flex-col mix-blend-screen'>
     <div className='w-[50%] max-sm:w-[100%]'>
       <div className='flex-wrap px-7 max-w-[700px] m-auto grid'>
         <div className="flex justify-between text-slate-300 mt-10  "  >
@@ -68,7 +68,7 @@ function Skillbar() {
     <div>Tailwind</div>
     <div>90%</div> </div>
   <div className="bg-green-950 h-[5px] w-[100%]">
-    <div className="bg-green-600 h-[5px] w-[90%] "></div>
+    <div className="bg-green-600 h-[5px] w-[90%]"></div>
   </div></div>
 </div>
 
