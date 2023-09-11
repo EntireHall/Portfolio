@@ -16,21 +16,24 @@ const Form = () => {
     }
 
 
-    function Input({ type, placeholder, name,typ}) {
-        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 pr-40 outline-none ' />
+    function Input({ type, placeholder, name}) {
+        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 max-sm:pr-20  md:pr-40 outline-none  ' />
         
     }
     
-    function Input1({ type, placeholder, name,typ}) {
-        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 pr-40 outline-none pb-40 max-sm:mr-4' />
+    function Input1({ type, placeholder, name}) {
+        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 md:pr-40 max-sm:pr-20  outline-none pb-40 max-sm:mr-4' />
         
     }
 
     return (
 
-        <form onSubmit={handleSubmit} autoComplete='off' className=' border-2 md:border-green-700 max-sm:border-none  flex flex-col flex-wrap md:p-10  mt-10 text-slate-200 mix-blend-screen' >
-            <div className='flex  flex-wrap justify-center items-center '>
-                <div className='grid gap-4 '>
+        <form onSubmit={handleSubmit} autoComplete='off' className=' border-2 border-green-700
+         flex flex-col justify-center items-center flex-wrap md:p-10  mt-10 text-slate-200 mix-blend-screen' >
+
+            <div className='flex flex-wrap justify-center items-center '>
+
+                <div className='grid gap-4 max-sm:mt-4'>
                     <Input type="text" name="name"  onChange={handleChange} value={data.name} placeholder='Your Name'  />
                     <Input type="phone" name="phone" onChange={handleChange} value={data.phone} placeholder='Your Phone' />
                     <Input type="email" name="email" onChange={handleChange} value={data.email} placeholder='Your Email' />
