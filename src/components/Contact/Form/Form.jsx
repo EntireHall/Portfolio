@@ -2,44 +2,33 @@ import React from 'react'
 import { useState } from 'react'
 
 const Form = () => {
-    const [data, setData] = useState({ name: "", phone: "", email: "", message: "" })
-
-    const handleChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-        setData({ ...data, [name]: value })
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        alert("Message Sent")
-    }
-
 
     function Input({ type, placeholder, name}) {
-        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 max-sm:pr-20  md:pr-40 outline-none  ' />
+        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2
+         border-red-600 pt-4 p-2 max-sm:pr-20  md:pr-40 outline-none  ' />
         
     }
     
     function Input1({ type, placeholder, name}) {
-        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2 border-red-600 pt-4 p-2 md:pr-40 max-sm:pr-20  outline-none pb-40 max-sm:mr-4' />
+        return <input type={type} name={name} placeholder={placeholder}  className='bg-transparent rounded border-2 mb-2
+         border-red-600 pt-4 p-2 md:pr-40 max-sm:pr-20  outline-none pb-40 max-sm:mr-4' />
         
     }
 
     return (
 
-        <form onSubmit={handleSubmit} autoComplete='off' className=' border-2 border-green-700
+        <form  action="https://getform.io/f/a51cda11-91ee-4d48-b33a-934cf848c2d1" method="POST" autoComplete='off' className=' border-2 border-green-700
          flex flex-col justify-center items-center flex-wrap md:p-10  mt-10 text-slate-200 mix-blend-screen' >
 
             <div className='flex flex-wrap justify-center items-center '>
 
                 <div className='grid gap-4 max-sm:mt-4'>
-                    <Input type="text" name="name"  onChange={handleChange} value={data.name} placeholder='Your Name'  />
-                    <Input type="phone" name="phone" onChange={handleChange} value={data.phone} placeholder='Your Phone' />
-                    <Input type="email" name="email" onChange={handleChange} value={data.email} placeholder='Your Email' />
+                    <Input type="text" name="name"  placeholder='Your Name'  />
+                    <Input type="phone" name="phone"   placeholder='Your Phone' />
+                    <Input type="email" name="email"   placeholder='Your Email' />
                 </div>
                 <div className='flex flex-wrap pl-4'>
-                    <Input1 type="text" name="message" onChange={handleChange} value={data.message} placeholder='Your Message'/>
+                    <Input1 type="text" name="message"  placeholder='Your Message'/>
                 </div>
             </div>
 

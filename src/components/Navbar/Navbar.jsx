@@ -19,7 +19,7 @@ export default function Navbar() {
             
                <h1 className=' font-bold text-slate-200 text-2xl  animate-pulse w-full px-4 font-Aer'>Portfoilio.</h1>
                 
-                <ul className={` md:flex md:justify-end gap-10 md:w-full text-lg px-6  ${show ? "sm:flex  md:border-hidden border-b mt-10 px-20 py-6 mr-[30%]  ": "hidden "}` }>
+                <ul className={` md:flex md:justify-end gap-10 md:w-full text-lg px-6  ${show ? "sm:flex  md:border-hidden border-b mt-14 px-20  mr-[20%]": "hidden "}` }>
                     <Li link={"/"} title={"Home"} />
                     <Li link={"/about"} title={"About"} />
                     <Li link={"/skill"} title={"Skill"} />
