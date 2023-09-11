@@ -1249,6 +1249,10 @@ video {
   max-width: 24rem;
 }
 
+.max-w-0{
+  max-width: 0rem;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
@@ -3258,6 +3262,22 @@ video {
     width: 100%;
   }
 
+  .max-sm\:max-w-sm{
+    max-width: 24rem;
+  }
+
+  .max-sm\:max-w-\[2\%\]{
+    max-width: 2%;
+  }
+
+  .max-sm\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .max-sm\:max-w-0{
+    max-width: 0rem;
+  }
+
   .max-sm\:flex-col{
     flex-direction: column;
   }
@@ -3269,6 +3289,21 @@ video {
   .max-sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .max-sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .max-sm\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .max-sm\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .max-sm\:pl-10{
@@ -3354,6 +3389,14 @@ video {
     max-width: 60%;
   }
 
+  .md\:max-w-\[0\%\]{
+    max-width: 0%;
+  }
+
+  .md\:max-w-\[10\%\]{
+    max-width: 10%;
+  }
+
   .md\:justify-end{
     justify-content: flex-end;
   }
@@ -3378,6 +3421,11 @@ video {
   .md\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .md\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .md\:pl-20{

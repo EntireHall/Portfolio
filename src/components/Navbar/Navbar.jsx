@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import {CgMenuHotdog,CgClose} from "react-icons/cg"
 
 
 function Li({ link, title }) {
-    return <Link to={link} className="font-semibold text-green-800 hover:underline underline-offset-4 ">
+    return <Link to={link} smooth duration={800} className="font-semibold text-green-800 hover:underline underline-offset-4 ">
         <li className=''><li className='hover:text-white transition-all duration-200 ease-in-out hover:text-xl'>{title}</li></li>
     </Link>
 }
@@ -19,7 +19,7 @@ export default function Navbar() {
             
                <h1 className=' font-bold text-slate-200 text-2xl  animate-pulse w-full px-4 font-Aer'>Portfoilio.</h1>
                 
-                <ul className={`md:flex md:justify-end gap-10 md:w-full text-lg px-6  ${show ? "sm:flex  md:border-hidden border-b mt-10 px-20 py-6 mr-[30%]  ": "hidden "}` }>
+                <ul className={` md:flex md:justify-end gap-10 md:w-full text-lg px-6  ${show ? "sm:flex  md:border-hidden border-b mt-10 px-20 py-6 mr-[30%]  ": "hidden "}` }>
                     <Li link={"/"} title={"Home"} />
                     <Li link={"/about"} title={"About"} />
                     <Li link={"/skill"} title={"Skill"} />
