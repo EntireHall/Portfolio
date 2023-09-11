@@ -909,6 +909,10 @@ video {
   margin-right: 2rem;
 }
 
+.mr-\[20\%\]{
+  margin-right: 20%;
+}
+
 .mt-0{
   margin-top: 0px;
 }
@@ -973,8 +977,8 @@ video {
   margin-top: 2rem;
 }
 
-.mr-\[20\%\]{
-  margin-right: 20%;
+.mr-\[40\%\]{
+  margin-right: 40%;
 }
 
 .box-border{
@@ -3232,6 +3236,14 @@ video {
     margin-top: 1.5rem;
   }
 
+  .max-sm\:mr-\[20\%\]{
+    margin-right: 20%;
+  }
+
+  .max-sm\:mr-\[40\%\]{
+    margin-right: 40%;
+  }
+
   .max-sm\:hidden{
     display: none;
   }
@@ -3276,6 +3288,10 @@ video {
 
   .max-sm\:pt-10{
     padding-top: 2.5rem;
+  }
+
+  .max-sm\:pr-40{
+    padding-right: 10rem;
   }
 
   .max-sm\:text-2xl{
@@ -3331,10 +3347,6 @@ video {
 
   .md\:max-w-\[60\%\]{
     max-width: 60%;
-  }
-
-  .md\:justify-start{
-    justify-content: flex-start;
   }
 
   .md\:justify-end{
