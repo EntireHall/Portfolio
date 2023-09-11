@@ -29,9 +29,9 @@ const Form = () => {
     return (
 
         <form onSubmit={handleSubmit} autoComplete='off' className=' border-2 md:border-green-700 max-sm:border-none  flex flex-col flex-wrap md:p-10  mt-10 text-slate-200 mix-blend-screen' >
-            <div className='flex  flex-wrap justify-center'>
-                <div className='grid '>
-                    <Input type="text" name="name"  onChange={handleChange} value={data.name} placeholder='Your Name' />
+            <div className='flex  flex-wrap justify-center items-center '>
+                <div className='grid gap-4 '>
+                    <Input type="text" name="name"  onChange={handleChange} value={data.name} placeholder='Your Name'  />
                     <Input type="phone" name="phone" onChange={handleChange} value={data.phone} placeholder='Your Phone' />
                     <Input type="email" name="email" onChange={handleChange} value={data.email} placeholder='Your Email' />
                 </div>

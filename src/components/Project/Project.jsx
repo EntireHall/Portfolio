@@ -5,7 +5,7 @@ function Rand({hell,div1})
 
 
 {
-  return<div className='text-slate-300 text-2xl font-pop flex flex-col justify-center items-center text-center px-2 mb-2.5 '>
+  return<div className='text-slate-300 text-xl font-pop flex flex-col justify-center items-center text-center px-2 mb-2.5 '>
 
       <h1 className='font-bold text-green-700 '>{hell}</h1>
       <span className='text-lg'>{div1}</span>
@@ -17,7 +17,7 @@ export default function Service() {
 
   return (
     
-     <div className='flex flex-col justify-center items-center flex-wrap gap-10 min-h-screen bg-zinc-950 mix-blend-screen'>
+     <div className='flex flex-col justify-center items-center flex-wrap gap-10 bg-zinc-950 mix-blend-screen'>
 
 <h1 className='md:text-6xl font-pop font-extrabold text-slate-200  mb-10 md:mt-40 max-sm:text-4xl max-sm:mt-16'>Projects Made  </h1>
     {
