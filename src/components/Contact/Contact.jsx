@@ -25,7 +25,7 @@ export default function Contact() {
     </div>
     </div>
     <div className='flex justify-center'>
-      <Form/>
+  
 
     </div>
     
